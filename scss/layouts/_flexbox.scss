@@ -1,0 +1,11 @@
+main{
+
+        .primerArticulo__contacto, .segundoArticulo__contacto{
+            @include fuente-principal;
+            display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: map-get($paleta_de_colores, amarillo );
+        }
+    }

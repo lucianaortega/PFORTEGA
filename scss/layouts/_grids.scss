@@ -1,0 +1,57 @@
+
+.main__foodDrinks{
+    
+        .row{
+            .col-sm-12{
+                img{
+                    width: 100%;
+                    height: 100%; 
+                }
+            }
+        }
+    }
+
+    .mainShishas{
+
+        .col-sm-4{
+            img{
+                width: 100%;
+                height: 70%; 
+            }
+        }
+    
+    }
+    
+    main{
+            .galeria__contacto{
+                display: grid;
+            grid-template-columns: 25vw 25vw;
+            grid-template-rows: 70vh 70vh ;
+            grid-template-areas: "cardUno cardDos"
+                                 "cardTres cardCuatro";
+            }
+        
+            .cardUno{
+                grid-area: cardUno;
+            }
+            
+            .cardDos{
+                grid-area: cardDos;
+        
+                .card{
+                    img{
+                        width: 70%;
+                        height: 70%;
+                    }
+                }
+            }
+        
+            .cardTres{
+                grid-area: cardTres;
+            }
+            
+            .cardCuatro{
+                grid-area: cardCuatro;
+            }
+        
+        }

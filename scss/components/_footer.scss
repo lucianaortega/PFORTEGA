@@ -1,0 +1,32 @@
+footer{
+    background-color:map-get($paleta_de_colores, negro );
+    color:map-get($paleta_de_colores, amarillo ) ;
+    @include fuente-principal;
+
+    ul{
+        list-style: none;
+    }
+    .footer__boton{
+        background-color: map-get($paleta_de_colores, verde);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        text-decoration: none;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+      
+        &:hover {
+          background-color: map-get($paleta_de_colores, verdeMilitar );
+        }
+      
+        &:focus {
+          outline: none;
+          box-shadow: 0 0 0 3px map-get($paleta_de_colores, negro );
+        }
+      
+        &:active {
+          background-color: map-get($paleta_de_colores, verdeOscuro );
+        }
+    }
+}
